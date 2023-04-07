@@ -15,5 +15,5 @@ def solution(p: float, x: np.array) -> tuple:
     S2 = sum([e ** 2 for e in x])
     ql = np.sqrt(sum / (k * chi2.ppf(1 - alpha / 2, n * 2)))
     qr = np.sqrt(sum / (k * chi2.ppf(alpha / 2, n * 2)))
-    return  ql\qr
+    return  ql, qr
            
